@@ -41,6 +41,7 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <h2><i class="fas fa-book-open me-2"></i>Documentation</h2>
+            <br><br>
             <a href="#" class="active" data-target="#content1">
                 <i class="fas fa-info-circle me-2"></i>Introduction
             </a>
@@ -1324,7 +1325,7 @@
                     <li><strong>Live Chat:</strong> For urgent issues, use the live chat feature to connect with a
                         support representative in real-time.</li>
                     <li><strong>Email Support:</strong> You can also reach out to the support team via email at
-                        support@example.com for assistance.</li>
+                        <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80f3f5f0f0eff2f4c0e5f8e1edf0ece5aee3efed">[email&#160;protected]</a> for assistance.</li>
                 </ul>
 
             </div>
@@ -1440,7 +1441,7 @@
     <!--scrollup-->
 
     <!-- JS here -->
-    <script src="./landing-page-assets/js/vendor/jquary-3.6.0.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./landing-page-assets/js/vendor/jquary-3.6.0.min.js"></script>
     <script src="./landing-page-assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="./landing-page-assets/js/vendor/bootstrap-bundle.js"></script>
     <script src="./landing-page-assets/js/vendor/jquery.isotope.js"></script>
@@ -1477,6 +1478,9 @@
                 $(this).find(".fa-caret-down").toggleClass("fa-rotate-180");
                 $(this).next(".submenu").slideToggle(300);
             });
+
+            // Initialize submenu as hidden
+            $(".submenu").hide();
 
             // Handle sidebar navigation links
             $(".sidebar a:not(.has-submenu)").click(function (e) {
@@ -1582,3 +1586,4 @@
 </body>
 
 </html>
+
