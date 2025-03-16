@@ -29,6 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = 'guides.html?feature=' + encodeURIComponent(featureName);
             }
         });
+        
+        // Feature links in footer
+        $('.footer-features-list .feature-link').click(function(e) {
+            e.preventDefault();
+            const featureName = $(this).data('feature');
+            window.location.href = 'guides.html?feature=' + encodeURIComponent(featureName);
+        });
     }, 500); // Wait for header to be fully loaded
     
     // Check if we're on the guides.html page - use setTimeout to run after page initialization
