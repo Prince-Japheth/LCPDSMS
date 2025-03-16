@@ -1,0 +1,12 @@
+
+---
+
+### How to Run the Project
+
+1. Clone or download the project folder.
+2. Open `index.html` in any browser (like Chrome, Firefox, etc.).
+3. Start interacting with the system by adding students, teachers, and courses, or use the contact form.
+
+---
+
+This is just a basic version of the system with minimal functionality. You can enhance it by adding backend integration (e.g., with Node.js or PHP), user authentication, databases (e.g., MySQL), and more complex features.

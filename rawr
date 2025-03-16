@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="LCPD School Management System - Comprehensive solution for educational institutions">
+
+    <!-- Site Title -->
+    <title>LCPD School Management System</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="./landing-page-assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="./landing-page-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/venobox.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/animate.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/keyframe-animation.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/odometer.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/nice-select.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/main.css">
+</head>
+
+<body>
+    <!-- header-area-start -->
+    <header class="header header-1 header-3 sticky-active">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-inner">
+                    <div class="top-bar-left">
+                        <ul class="top-bar-list">
+                            <li><i class="fa-regular fa-phone"></i><a href="tel:256214203215">256 214 203 215</a></li>
+                            <li><i class="fa-regular fa-location-dot"></i><span>258 Helano Street, New York</span></li>
+                            <li><i class="fa-regular fa-clock"></i><span>Mon - Sat: 8:00 - 15:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="top-bar-right">
+                        <div class="register-box">
+                            <div class="icon"><i class="fa-regular fa-user"></i></div>
+                            <a href="contact.html">Login / Register</a>
+                        </div>
+                        <div class="top-social-wrap">
+                            <span>Follow Us</span>
+                            <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-header">
+            <div class="container">
+                <div class="mid-header-inner">
+                    <div class="header-logo d-lg-block">
+                        <a href="index.html">
+                            <img src="./landing-page-assets/img/logo/logo-1.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="category-form-wrap">
+                        <div class="nice-select select-control country" tabindex="0">
+                            <span class="current">Features</span>
+                            <ul class="list">
+                                <li data-value="" class="option selected focus">All Features</li>
+                                <li data-value="enrollment" class="option">Student Enrollment</li>
+                                <li data-value="courses" class="option">Course Management</li>
+                                <li data-value="attendance" class="option">Attendance Tracking</li>
+                            </ul>
+                        </div>
+                        <form class="header-form" action="#">
+                            <input class="form-control" type="text" name="search" placeholder="Search features...">
+                            <button class="submit ed-primary-btn"><i
+                                    class="fa-regular fa-magnifying-glass"></i>Search</button>
+                        </form>
+                    </div>
+                    <div class="mid-header-right">
+                        <div class="header-right-icon d-xl-block d-lg-none">
+                            <a href="#"><i class="fa-sharp fa-regular fa-bell"></i></a>
+                            <span class="number">0</span>
+                        </div>
+                        <div class="header-right-icon">
+                            <a href="#"><i class="fa-regular fa-user"></i></a>
+                        </div>
+                        <a href="contact.html" class="ed-primary-btn header-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="primary-header">
+            <div class="container">
+                <div class="primary-header-inner">
+                    <div class="header-logo d-lg-none">
+                        <a href="index.html">
+                            <img src="./landing-page-assets/img/logo/logo-1.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header-left-inner">
+                        <div class="category-area">
+                            <div class="category-btn">
+                                <i class="fa-sharp fa-solid fa-grid-2"></i>
+                                <span>Features</span>
+                                <ul class="category-sub-menu">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="menu-item">Student Management</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menu-item">Course Registration</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menu-item">Library System</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menu-item">Fee Management</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-menu-wrap">
+                            <div class="mobile-menu-items">
+                                <ul class="sub-menu">
+                                    <li class="active">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.header-menu-wrap -->
+                    </div>
+                    <div class="header-right-wrap">
+                        <div class="header-right">
+                            <div class="header-right-btn">
+                                <a href="contact.html" class="ed-primary-btn">Start Free Trial</a>
+                            </div>
+                            <div class="header-logo d-none d-lg-none">
+                                <a href="index.html">
+                                    <img src="./landing-page-assets/img/logo/logo-1.png" alt="Logo">
+                                </a>
+                            </div>
+                            <div class="header-right-item d-lg-none d-md-block">
+                                <a href="javascript:void(0)" class="mobile-side-menu-toggle"><i
+                                        class="fa-sharp fa-solid fa-bars"></i></a>
+                            </div>
+                        </div>
+                        <!-- /.header-right -->
+                    </div>
+                </div>
+                <!-- /.primary-header-inner -->
+            </div>
+        </div>
+    </header>
+    <!-- /.Main Header -->
+
+    <div id="popup-search-box">
+        <div class="box-inner-wrap d-flex align-items-center">
+            <form id="form" action="#" method="get" role="search">
+                <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+            </form>
+            <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+        </div>
+    </div>
+    <!-- /#popup-search-box -->
+
+    <div class="mobile-side-menu">
+        <div class="side-menu-content">
+            <div class="side-menu-head">
+                <a href="index.html"><img src="./landing-page-assets/img/logo/logo-1.png" alt="logo"></a>
+                <button class="mobile-side-menu-close"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+            <div class="side-menu-wrap"></div>
+            <ul class="side-menu-list">
+                <li><i class="fa-light fa-location-dot"></i>Address : <span>Amsterdam, 109-74</span></li>
+                <li><i class="fa-light fa-phone"></i>Phone : <a href="tel:+01569896654">+01 569 896 654</a></li>
+                <li><i class="fa-light fa-envelope"></i>Email : <a href="mailto:info@example.com">info@example.com</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.mobile-side-menu -->
+    <div class="mobile-side-menu-overlay"></div>
+
+    <div id="preloader">
+        <div class="spinner-logo"><img src="./landing-page-assets/img/favicon.png" alt="logo"></div>
+        <div class="spinner"></div>
+    </div>
+    <!-- ./ preloader -->
+
+    <!-- hero-section -->
+    <section class="hero-section overflow-hidden">
+        <div class="shapes">
+            <div class="shape shape-1"><img src="./landing-page-assets/img/shapes/hero-shape-2.png" alt="shape"></div>
+            <div class="shape shape-2"><img src="./landing-page-assets/img/shapes/hero-shape-3.png" alt="shape"></div>
+            <div class="shape shape-3"><img src="./landing-page-assets/img/shapes/hero-shape-4.png" alt="shape"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <div class="hero-content">
+                        <div class="section-heading mb-40">
+                            <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span
+                                    class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Welcome to
+                                School Management System</h4>
+                            <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Streamline Your
+                                <br>School's <span>Operations</span>
+                            </h2>
+                        </div>
+                        <div class="hero-btn-wrap">
+                            <a href="contact.html" class="ed-primary-btn">Get Started</a>
+                            <div class="hero-video">
+                                <div class="video-btn">
+                                    <a class="video-popup venobox" data-autoplay="true" data-vbtype="video"
+                                        href="https://youtu.be/JwC-Qx1lJso">
+                                        <div class="play-btn">
+                                            <i class="fa-sharp fa-solid fa-play"></i>
+                                        </div>
+                                        Watch Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-author">
+                            <ul>
+                                <li><img src="./landing-page-assets/img/images/hero-author-1.png" alt="img"></li>
+                                <li><img src="./landing-page-assets/img/images/hero-author-2.png" alt="img"></li>
+                                <li><img src="./landing-page-assets/img/images/hero-author-3.png" alt="img"></li>
+                                <li><img src="./landing-page-assets/img/images/hero-author-4.png" alt="img"></li>
+                            </ul>
+                            <h5><span>Efficient</span>Management</h5>
+                        </div>
+                        <h4 class="bottom-text">Manage <span>Students</span>, Teachers, Courses & More</h4>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="hero-img-wrap">
+                        <div class="hero-img">
+                            <img src="./landing-page-assets/img/images/hero-img-1.png" alt="hero">
+                        </div>
+                        <div class="hero-img-shape"><img src="./landing-page-assets/img/shapes/hero-shape-1.png"
+                                alt="shape"></div>
+                        <div class="hero-text-element">
+                            <h3 class="title"><span class="odometer" data-count="4">0</span><span
+                                    class="number">+</span></h3>
+                            <p>Core Features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./ hero-section -->

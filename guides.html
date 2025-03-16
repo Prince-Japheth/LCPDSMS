@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Title -->
+    <title>LCPD School Management System Docs</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="./landing-page-assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="./landing-page-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/venobox.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/animate.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/keyframe-animation.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/odometer.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/nice-select.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/main.css">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div id="header-component"></div>
+    <script>
+        fetch('./components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-component').innerHTML = data;
+            });
+    </script>
+
+    <div class="container custom-guide">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2><i class="fas fa-book-open me-2"></i>Documentation</h2>
+            <a href="#" class="active" data-target="#content1">
+                <i class="fas fa-info-circle me-2"></i>Introduction
+            </a>
+            <a href="#" data-target="#content2">
+                <i class="fas fa-rocket me-2"></i>Getting Started
+            </a>
+            <a href="#" data-target="#content3">
+                <i class="fas fa-cogs me-2"></i>System Features
+            </a>
+            <a href="#" data-target="#content4">
+                <i class="fas fa-user-circle me-2"></i>User Accounts
+            </a>
+
+            <a href="#" class="has-submenu">
+                <i class="fas fa-star me-2"></i>Reviews & Ratings
+                <i class="fas fa-caret-down float-end"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="#" data-target="#content5">
+                        <i class="fas fa-chalkboard-teacher me-2"></i>Instructor Reviews
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="#content6">
+                        <i class="fas fa-book me-2"></i>Courses Reviews
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" data-target="#content7">
+                <i class="fas fa-comments me-2"></i>Messaging
+            </a>
+            <a href="#" data-target="#content8">
+                <i class="fas fa-credit-card me-2"></i>Enrollment & Payment
+            </a>
+            <a href="#" data-target="#content9">
+                <i class="fas fa-university me-2"></i>Library & Community
+            </a>
+            <a href="#" data-target="#content10">
+                <i class="fas fa-shield-alt me-2"></i>Security Features
+            </a>
+            <a href="#" data-target="#content11">
+                <i class="fas fa-chart-line me-2"></i>Analytics & Reports
+            </a>
+            <a href="#" data-target="#content12">
+                <i class="fas fa-life-ring me-2"></i>Support
+            </a>
+            <hr>
+            <a href="#" data-target="#content13">
+                <i class="fas fa-wrench me-2"></i>Troubleshooting
+            </a>
+            <a href="#" data-target="#content14">
+                <i class="fas fa-question-circle me-2"></i>FAQs
+            </a>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+
+            <!-- Sidebar Toggle Button (Visible on small screens) -->
+            <button class="btn btn-outline-danger sidebar-toggle d-lg-none">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div id="content1" class="content-section">
+                <h2>Overview of the School Management System</h2>
+                <div class="d-flex justify-content-center mt-3">
+                    <img src="./images/doc_img.png" alt="School Management System" class="img-fluid">
+                </div>
+
+                <p>Welcome to the <strong>School Management System</strong> documentation. This innovative system is
+                    designed to streamline and optimize the management of school activities, ensuring a seamless
+                    experience for administrators, teachers, and students alike. By integrating various functionalities
+                    into a single platform, the system enhances operational efficiency and fosters a collaborative
+                    educational environment.</p>
+
+                <h5 class="fw-bold mt-4">Key Features</h5>
+                <ul>
+                    <li>
+                        <strong>Student Enrollment:</strong> The system simplifies the enrollment process with an
+                        intuitive interface that allows for easy registration and management of student information.
+                        Administrators can track enrollment statistics and manage student records efficiently.
+                    </li>
+                    <li>
+                        <strong>Course Management:</strong> Administrators and teachers can create, modify, and manage
+                        courses, schedules, and curriculum. The system allows for easy assignment of teachers to courses
+                        and provides students with a clear view of their schedules and available classes.
+                    </li>
+                    <li>
+                        <strong>Attendance Tracking:</strong> The system enables teachers to take attendance quickly and
+                        accurately. Automated reports help identify trends in attendance, allowing for timely
+                        interventions when necessary.
+                    </li>
+                    <li>
+                        <strong>Grade Management:</strong> Teachers can input grades and provide feedback directly
+                        through the system. Students can access their grades in real-time, promoting transparency and
+                        encouraging academic accountability.
+                    </li>
+                    <li>
+                        <strong>Communication Tools:</strong> The system includes built-in messaging and notification
+                        systems that facilitate communication between teachers and students. Announcements, reminders,
+                        and important updates can be shared instantly.
+                    </li>
+                    <li>
+                        <strong>Reporting and Analytics:</strong> Generate comprehensive reports on student performance,
+                        attendance, and other key metrics. Administrators can analyze data to inform decision-making and
+                        improve educational outcomes.
+                    </li>
+                    <li>
+                        <strong>Library Management:</strong> Manage library resources, track book loans, and facilitate
+                        access to educational materials. Students can search for and reserve books online, enhancing
+                        their learning experience.
+                    </li>
+                    <li>
+                        <strong>Extracurricular Activities:</strong> Organize and manage extracurricular activities,
+                        clubs, and events. The system allows students to sign up for activities, view schedules, and
+                        receive updates.
+                    </li>
+                    <li>
+                        <strong>Fee Management:</strong> Streamline the fee collection process with automated billing
+                        and payment tracking. Administrators can generate invoices, track payments, and send reminders
+                        to students.
+                    </li>
+                    <li>
+                        <strong>User Management:</strong> Manage user roles and permissions effectively. The system
+                        allows administrators to create user accounts for teachers, staff, and students, ensuring that
+                        everyone has appropriate access to the system's features.
+                    </li>
+                    <li>
+                        <strong>Mobile Access:</strong> The system is designed to be mobile-friendly, allowing users to
+                        access important information and features from their smartphones or tablets, ensuring
+                        flexibility and convenience.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Benefits of the System</h5>
+                <p>The School Management System offers numerous benefits, including:</p>
+                <ul>
+                    <li><strong>Increased Efficiency:</strong> Automating administrative tasks reduces the workload for
+                        staff, allowing them to focus on more strategic initiatives.</li>
+                    <li><strong>Improved Communication:</strong> Enhanced communication tools foster collaboration among
+                        teachers and students, leading to a more engaged learning environment.</li>
+                    <li><strong>Data Accuracy and Security:</strong> Centralized data management ensures that student
+                        records are accurate and secure, minimizing the risk of data loss or mismanagement.</li>
+                    <li><strong>Enhanced Student Engagement:</strong> By providing students with easy access to their
+                        academic information and resources, the system encourages active participation in their
+                        education.</li>
+                    <li><strong>Customizable and Scalable:</strong> The system can be tailored to meet the specific
+                        needs of different educational institutions, making it suitable for schools of all sizes.</li>
+                    <li><strong>Real-Time Updates:</strong> The system provides real-time updates on grades, attendance,
+                        and announcements, ensuring that students and teachers are always informed.</li>
+                    <li><strong>Resource Optimization:</strong> By managing resources effectively, the system helps
+                        schools reduce costs and allocate funds more efficiently.</li>
+                    <li><strong>Enhanced Parental Involvement:</strong> While parents are not included in this overview,
+                        the system can facilitate communication with them, should that be a future consideration,
+                        enhancing their involvement in the educational process.</li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Conclusion</h5>
+                <p>In conclusion, the School Management System is a comprehensive solution that addresses the diverse
+                    needs of educational institutions. By integrating essential features into a single platform, it
+                    empowers administrators, teachers, and students to manage school activities effectively and
+                    efficiently. This system not only enhances operational workflows but also fosters a collaborative
+                    and engaging educational environment, ultimately contributing to improved academic outcomes and
+                    student success.</p>
+
+            </div>
+
+            <div id="content2" class="content-section d-none">
+                <h2>Getting Started</h2>
+                <p>To get started with the School Management System, follow these simple steps:</p>
+
+                <h5 class="fw-bold mt-4">Creating an Account</h5>
+                <p>To create an account, follow these steps:</p>
+                <ol>
+                    <li><strong>Visit the Sign-Up Page:</strong> Navigate to the sign-up page of the School Management
+                        System. You can usually find a link to this page on the homepage or the login page.</li>
+                    <li><strong>Fill in Your Details:</strong> Provide the required information in the registration
+                        form. The fields typically include:
+                        <ul>
+                            <li><strong>First Name:</strong> Your given name.</li>
+                            <li><strong>Last Name:</strong> Your family name.</li>
+                            <li><strong>Username:</strong> A unique identifier for your account. Choose something
+                                memorable but not easily guessable.</li>
+                            <li><strong>Email Address:</strong> A valid email address that you have access to. This will
+                                be used for account verification and password recovery.</li>
+                            <li><strong>Password:</strong> Create a strong password that meets the security requirements
+                                (at least 8 characters, including a number, a capital letter, and a special character).
+                            </li>
+                            <li><strong>Phone Number:</strong> Your contact number for verification and communication
+                                purposes.</li>
+                            <li><strong>Date of Birth:</strong> Your birth date, which may be used for age verification.
+                            </li>
+                            <li><strong>Nationality:</strong> Your country of citizenship.</li>
+                            <li><strong>State of Origin:</strong> The state you are originally from.</li>
+                            <li><strong>Address:</strong> Your residential address.</li>
+                            <li><strong>Heard About Us:</strong> A field to indicate how you learned about the School
+                                Management System (e.g., referral, advertisement, etc.).</li>
+                            <li><strong>Bio:</strong> A brief description about yourself, which can help personalize
+                                your profile.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Upload Profile and Cover Pictures:</strong> Optionally, you can upload a profile picture
+                        and a cover photo. Ensure that the images are in JPEG, PNG, or GIF format. The profile picture
+                        will represent you in the system, while the cover photo can enhance your profile's visual
+                        appeal.</li>
+                    <li><strong>Submit Your Information:</strong> After filling in all the required fields, click the
+                        "Sign Up" button to create your account. You may receive a confirmation email to verify your
+                        email address.</li>
+                </ol>
+                <p>Upon successful registration, you will receive a confirmation message, and your account will be
+                    created in the system. If you do not receive a confirmation email, check your spam folder or try
+                    resending the verification email from the login page.</p>
+
+                <h5 class="fw-bold mt-4">Signing In</h5>
+                <p>Once your account is created, you can sign in to the system:</p>
+                <ol>
+                    <li><strong>Go to the Sign-In Page:</strong> Navigate to the sign-in page of the School Management
+                        System. This is typically accessible from the homepage or the main menu.</li>
+                    <li><strong>Enter Your Credentials:</strong> Input your username or email address and your password
+                        in the respective fields. Ensure that you enter the information correctly, as it is
+                        case-sensitive.</li>
+                    <li><strong>Click on Sign In:</strong> After entering your credentials, click the "Sign In" button.
+                        If your credentials are correct, you will be redirected to your dashboard.</li>
+                </ol>
+                <p>If you encounter any issues during sign-in, consider the following troubleshooting tips:</p>
+                <ul>
+                    <li><strong>Check Your Credentials:</strong> Ensure that you are using the correct username or email
+                        and password. If you have forgotten your password, use the "Forgot Password?" link to reset it.
+                    </li>
+                    <li><strong>Account Status:</strong> If your account is not active, you may receive a message
+                        indicating that your account is inactive. In this case, please contact support for assistance.
+                    </li>
+                    <li><strong>Browser Issues:</strong> Sometimes, browser settings or extensions can interfere with
+                        the login process. Try clearing your browser cache or using a different browser.</li>
+                </ul>
+                <p>After successful login, you will have access to your personalized dashboard, where you can manage
+                    your activities and settings.</p>
+
+            </div>
+
+            <div id="content3" class="content-section d-none">
+                <h2>System Features</h2>
+                <p>The School Management System comes with a wide range of features designed to streamline school
+                    operations, enhance communication, and improve the overall educational experience. Below are the key
+                    features of the system:</p>
+
+                <ul>
+                    <li>
+                        <strong>Sign-In/Sign-Up:</strong> Secure login and registration for users. The system ensures
+                        that all user accounts are protected with strong authentication methods, including email
+                        verification and password security measures. This feature enhances the overall security of the
+                        system.
+                    </li>
+                    <li>
+                        <strong>Enrollment:</strong> Handle student registration and admission processes seamlessly. The
+                        enrollment feature simplifies the process of adding new students to the system, allowing for
+                        easy tracking of student information and status. It can also include automated notifications for
+                        students regarding their enrollment status.
+                    </li>
+                    <li>
+                        <strong>Index:</strong> A centralized overview of the entire system, providing quick access to
+                        all functionalities. The index serves as a dashboard where users can see notifications, upcoming
+                        events, and important announcements at a glance. This feature helps users prioritize their tasks
+                        and stay organized.
+                    </li>
+                    <li>
+                        <strong>Programs & Subprograms:</strong> Organize academic programs and their subcategories
+                        efficiently. This feature allows administrators to define various programs offered by the
+                        institution, along with their respective subprograms, ensuring clarity in academic offerings. It
+                        also aids in tracking student enrollment in specific programs.
+                    </li>
+                    <li>
+                        <strong>Departments:</strong> Manage departments within the institution, including assigning
+                        faculty members to specific departments. This feature helps in maintaining departmental
+                        integrity and facilitates better communication among faculty and administration. It also allows
+                        for departmental performance tracking and resource allocation.
+                    </li>
+                    <li>
+                        <strong>Courses:</strong> Add, update, and manage courses for different programs. This includes
+                        defining course prerequisites, scheduling classes, and assigning instructors. The system allows
+                        for easy tracking of course offerings and student enrollments, ensuring that students can
+                        register for the courses they need.
+                    </li>
+                    <li>
+                        <strong>Academic Calendar:</strong> Track holidays, semesters, and important academic dates. The
+                        academic calendar feature helps students and faculty stay informed about key dates, including
+                        registration periods, exam schedules, and school holidays. This feature can also send reminders
+                        for upcoming events.
+                    </li>
+                    <li>
+                        <strong>Exam Timetable:</strong> Schedule exams and view exam-related details. This feature
+                        allows administrators to create and manage exam schedules, ensuring that students are aware of
+                        their exam dates and locations in advance. It also helps in avoiding scheduling conflicts.
+                    </li>
+                    <li>
+                        <strong>Library Management:</strong> Keep track of library books and materials. This feature
+                        allows librarians to manage inventory, track book loans, and facilitate access to educational
+                        resources for students and faculty. It can also include a search function for users to find
+                        available resources easily.
+                    </li>
+                    <li>
+                        <strong>Community:</strong> Enable interaction among staff, students, and faculty. The community
+                        feature fosters collaboration and communication through forums, discussion boards, and group
+                        messaging, enhancing the sense of belonging within the institution. This can lead to increased
+                        student engagement and participation.
+                    </li>
+                    <li>
+                        <strong>Messages:</strong> Send and receive messages within the system. This built-in messaging
+                        system allows users to communicate directly with each other, facilitating quick and efficient
+                        information sharing. It can also include notifications for unread messages.
+                    </li>
+                    <li>
+                        <strong>Analytics & Reports:</strong> Generate reports based on various metrics, such as student
+                        performance, attendance, and course evaluations. This feature provides valuable insights that
+                        help administrators make informed decisions and improve educational outcomes. Customizable
+                        report templates can also be created for specific needs.
+                    </li>
+                    <li>
+                        <strong>Events:</strong> Organize and manage school events, such as workshops, seminars, and
+                        extracurricular activities. This feature allows users to create event listings, manage
+                        registrations, and communicate event details to participants. It can also include RSVP
+                        functionality for better planning.
+                    </li>
+                    <li>
+                        <strong>Support:</strong> Access troubleshooting and support documents. The support feature
+                        provides users with resources to resolve common issues, including FAQs, user guides, and contact
+                        information for technical support. This ensures that users can find help when needed.
+                    </li>
+                    <li>
+                        <strong>Email Verification & Two-Step Authentication:</strong> Ensures secure account access.
+                        This feature enhances security by requiring users to verify their email addresses and,
+                        optionally, to use two-step authentication for added protection. This significantly reduces the
+                        risk of unauthorized access to user accounts and sensitive information.
+                    </li>
+                    <li>
+                        <strong>In-built Payment System:</strong> Make payments for fees and other services securely.
+                        The payment system allows users to pay tuition, library fees, and other charges online,
+                        providing a convenient and efficient payment process. It can also generate payment receipts and
+                        track payment history for users.
+                    </li>
+                    <li>
+                        <strong>Customizable User Roles:</strong> Define and manage user roles and permissions. This
+                        feature allows administrators to customize access levels for different users (e.g., students,
+                        teachers, administrators), ensuring that each user has the appropriate level of access to system
+                        functionalities. This enhances security and operational efficiency.
+                    </li>
+                    <li>
+                        <strong>Mobile Access:</strong> Access the system from mobile devices. The mobile-friendly
+                        design ensures that users can manage their accounts, view schedules, and interact with the
+                        system on the go, providing flexibility and convenience for busy students and staff. This
+                        feature can also include a mobile app for enhanced user experience.
+                    </li>
+                    <li>
+                        <strong>Notifications:</strong> Coming Soon!
+                    </li>
+                    <li>
+                        <strong>Feedback and Evaluation:</strong> Collect feedback from students and faculty regarding
+                        courses, instructors, and school services. This feature allows for continuous improvement by
+                        enabling the administration to assess and respond to user experiences and suggestions, fostering
+                        a culture of open communication.
+                    </li>
+                    <li>
+                        <strong>Data Backup and Recovery:</strong> Ensure that all data is securely backed up and can be
+                        recovered in case of system failures. This feature provides peace of mind by safeguarding
+                        critical information and maintaining system integrity, ensuring that no data is lost during
+                        unexpected events.
+                    </li>
+                    <li>
+                        <strong>Integration with Third-Party Tools:</strong> Seamlessly integrate with other educational
+                        tools and platforms, such as learning management systems (LMS) and communication apps. This
+                        feature enhances the functionality of the School Management System by allowing users to leverage
+                        additional resources, improving overall educational delivery.
+                    </li>
+                    <li>
+                        <strong>Attendance Tracking:</strong> Monitor student attendance in real-time. This feature
+                        allows teachers to take attendance easily and track student participation, providing insights
+                        into student engagement and helping identify those who may need additional support.
+                    </li>
+                    <li>
+                        <strong>Grade Management:</strong> Manage and record student grades efficiently. This feature
+                        allows teachers to input grades, calculate averages, and generate report cards, making it easier
+                        to track student performance over time and communicate results to students and parents.
+                    </li>
+                    <li>
+                        <strong>Resource Management:</strong> Manage school resources, including classrooms, equipment,
+                        and facilities. This feature helps in scheduling and allocating resources effectively, ensuring
+                        that all necessary materials are available for classes and events.
+                    </li>
+                    <li>
+                        <strong>And Many More!</strong>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="content4" class="content-section d-none">
+                <h2>User Accounts</h2>
+                <p>In the School Management System, user accounts are essential for managing access and ensuring that
+                    each user can interact with the system according to their role. This section will guide you through
+                    the process of creating an account, signing in, and managing your account settings.</p>
+
+                <h5 class="fw-bold mt-4">Viewing and Managing Account Details</h5>
+                <p>After signing in, you can view and manage your account details:</p>
+                <ol>
+                    <li><strong>Access Account Settings:</strong> Navigate to the account settings section from your
+                        dashboard. This is usually found in the user profile menu or settings icon.</li>
+                    <li><strong>View Your Information:</strong> Here, you can view your personal information, including
+                        your name, email, phone number, date of birth, and profile details. Ensure that all information
+                        is accurate and up-to-date.</li>
+                    <li><strong>Edit Your Information:</strong> If you need to update any information, such as your
+                        phone number or address, you can do so in the settings. Make sure to save any changes you make
+                        by clicking the "Save" button.</li>
+                    <li><strong>Change Your Password:</strong> For security reasons, you can change your password in the
+                        account settings. Enter your current password, followed by your new password, and confirm the
+                        new password. Ensure that your new password meets the security criteria.</li>
+                    <li><strong>Log Out:</strong> When you are finished, remember to log out of your account, especially
+                        if you are using a shared or public computer. This helps protect your account from unauthorized
+                        access.</li>
+                </ol>
+                <p>By managing your account settings, you can ensure that your information is up-to-date and secure,
+                    allowing for a better experience within the School Management System. Regularly review your account
+                    details and update them as necessary to maintain security and accuracy.</p>
+
+                <h5 class="fw-bold mt-4">Student Features: Viewing Enrollment Details</h5>
+                <p>As a student, you have access to your enrollment details, which provide important information about
+                    your academic journey:</p>
+                <ol>
+                    <li><strong>Access Enrollment Section:</strong> From your dashboard, navigate to the "Enrollment"
+                        section. This area contains all relevant information regarding your courses and academic status.
+                    </li>
+                    <li><strong>View Current Enrollments:</strong> Here, you can see a list of courses you are currently
+                        enrolled in, along with details such as course names, instructors, schedules, and classroom
+                        locations.</li>
+                    <li><strong>Check Enrollment Status:</strong> You can view your enrollment status for each course,
+                        including whether you are actively enrolled, wait listed, or dropped from any courses. This
+                        helps you stay informed about your academic standing.</li>
+                    <li><strong>Access Course Materials:</strong> Some courses may provide links to course materials,
+                        assignments, and resources directly from the enrollment section, allowing for easy access to
+                        essential information.</li>
+                    <li><strong>Request Changes:</strong> If you need to make changes to your enrollment, such as adding
+                        or dropping a course, you can submit a request through the system, which will be reviewed by
+                        your academic advisor.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Administrator Features: Managing User Credentials</h5>
+                <p>Administrators have additional capabilities for managing user accounts and credentials:</p>
+                <ol>
+                    <li><strong>Access User Management Section:</strong> Navigate to the "User Management" section from
+                        the admin dashboard. This area allows you to view and manage all user accounts within the
+                        system.</li>
+                    <li><strong>View User Credentials:</strong> Administrators can view detailed information about each
+                        user, including their roles, enrollment status, and account activity. This helps in monitoring
+                        user engagement and performance.</li>
+                    <li><strong>Edit User Information:</strong> If necessary, administrators can update user
+                        information, such as changing roles, resetting passwords, or modifying contact details to ensure
+                        accuracy and security.</li>
+                    <li><strong>Deactivate or Activate Accounts:</strong> Administrators have the authority to
+                        deactivate or activate user accounts based on compliance with school policies or user requests.
+                    </li>
+                    <li><strong>Generate User Reports:</strong> The system allows administrators to generate reports on
+                        user activity, enrollment statistics, and other metrics, providing insights that can inform
+                        decision-making and policy adjustments.</li>
+                </ol>
+
+            </div>
+
+            <div id="content5" class="content-section d-none">
+                <h2>Instructor Reviews</h2>
+                <p>The Instructor Reviews feature allows students to provide feedback on their instructors, helping to
+                    enhance the quality of education and teaching methods. This section outlines how the review process
+                    works and its importance.</p>
+
+                <h5 class="fw-bold mt-4">How Instructor Reviews Work</h5>
+                <p>Instructor reviews are collected through a structured process that ensures valuable feedback is
+                    gathered from students:</p>
+
+                <ol>
+                    <li><strong>Access the Review Section:</strong> After logging in, navigate to the "Instructor
+                        Reviews" section from your dashboard.</li>
+                    <li><strong>Select an Instructor:</strong> Choose the instructor you wish to review from a list of
+                        your current or past instructors. This list is populated based on the courses you have taken.
+                    </li>
+                    <li><strong>Rate the Instructor:</strong> Provide a rating based on your experience. Ratings are
+                        typically on a scale (e.g., 1 to 5 stars), allowing for a quick assessment of the instructor's
+                        performance.</li>
+                    <li><strong>Provide Written Feedback:</strong> In addition to the rating, you can provide detailed
+                        written feedback. This may include comments on teaching style, course content, communication
+                        skills, and overall effectiveness.</li>
+                    <li><strong>Submit Your Review:</strong> Once you have completed the rating and feedback, click the
+                        "Submit" button. Your review will be recorded in the system and made available to the
+                        administration and the instructor.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Benefits of Instructor Reviews</h5>
+                <p>Instructor reviews provide numerous benefits for students and the institution:</p>
+                <ul>
+                    <li><strong>Improved Teaching Quality:</strong> Feedback from students helps instructors identify
+                        areas for improvement, leading to enhanced teaching methods and course delivery.</li>
+                    <li><strong>Informed Decision-Making:</strong> Administrators can use review data to make informed
+                        decisions regarding faculty development, training, and performance evaluations.</li>
+                    <li><strong>Enhanced Student Engagement:</strong> Allowing students to voice their opinions fosters
+                        a sense of involvement and accountability in the educational process.</li>
+                    <li><strong>Transparency:</strong> The review process promotes transparency within the institution,
+                        encouraging open communication between students and faculty.</li>
+                </ul>
+
+            </div>
+
+            <div id="content6" class="content-section d-none">
+                <h2>Course Reviews</h2>
+                <p>The Course Reviews feature enables students to provide feedback on the courses they have taken,
+                    helping to improve course content and delivery. This section outlines how the course review process
+                    works and its significance.</p>
+
+                <h5 class="fw-bold mt-4">How Course Reviews Work</h5>
+                <p>Course reviews are collected through a structured process that allows students to share their
+                    experiences:</p>
+
+                <ol>
+                    <li><strong>Access the Course Review Section:</strong> After logging in, navigate to the "Course
+                        Reviews" section from your dashboard.</li>
+                    <li><strong>Select a Course:</strong> Choose the course you wish to review from a list of courses
+                        you have completed. This list is generated based on your enrollment history.</li>
+                    <li><strong>Rate the Course:</strong> Provide a rating for the course based on your experience.
+                        Ratings are typically on a scale (e.g., 1 to 5 stars), allowing for a quick assessment of the
+                        course quality.</li>
+                    <li><strong>Provide Written Feedback:</strong> In addition to the rating, you can provide detailed
+                        written feedback. This may include comments on course content, structure, instructor
+                        effectiveness, and overall satisfaction.</li>
+                    <li><strong>Submit Your Review:</strong> Once you have completed the rating and feedback, click the
+                        "Submit" button. Your review will be recorded in the system and made available to the
+                        administration and the course instructor.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Benefits of Course Reviews</h5>
+                <p>Course reviews provide numerous benefits for students and the institution:</p>
+                <ul>
+                    <li><strong>Enhanced Course Quality:</strong> Feedback from students helps instructors and
+                        curriculum developers identify areas for improvement, leading to better course content and
+                        delivery.</li>
+                    <li><strong>Informed Curriculum Development:</strong> Administrators can use review data to make
+                        informed decisions regarding curriculum changes and enhancements based on student feedback.</li>
+                    <li><strong>Increased Student Satisfaction:</strong> By allowing students to express their opinions,
+                        institutions can create a more responsive and engaging learning environment.</li>
+                    <li><strong>Accountability:</strong> Course reviews promote accountability among instructors and
+                        course designers, ensuring that they meet the educational needs of students.</li>
+                </ul>
+
+            </div>
+
+            <div id="content7" class="content-section d-none">
+                <h2>Messaging</h2>
+                <p>The School Management System includes a robust messaging feature that facilitates communication among
+                    students, faculty, and administrators. This section outlines how the messaging system works and how
+                    users can effectively utilize it for seamless communication.</p>
+
+                <h5 class="fw-bold mt-4">How the Messaging System Works</h5>
+                <p>The messaging system is designed to provide a secure and efficient way for users to communicate
+                    within the School Management System. Here’s how it operates:</p>
+
+                <ul>
+                    <li>
+                        <strong>Direct Messaging:</strong> Users can send direct messages to one another. This feature
+                        allows for private conversations between students and faculty or among peers, enabling quick and
+                        effective communication.
+                    </li>
+                    <li>
+                        <strong>Group Messaging:</strong> Users can create group chats to facilitate discussions among
+                        multiple participants. This is particularly useful for group projects, study sessions, or
+                        announcements that need to reach several individuals at once.
+                    </li>
+                    <li>
+                        <strong>Message Notifications:</strong> Users receive notifications for new messages, ensuring
+                        that they stay informed about ongoing conversations. Notifications can be customized based on
+                        user preferences.
+                    </li>
+                    <li>
+                        <strong>Message History:</strong> The system maintains a history of all messages sent and
+                        received, allowing users to refer back to previous conversations. This feature is essential for
+                        tracking important discussions and decisions.
+                    </li>
+                    <li>
+                        <strong>Search Functionality:</strong> Users can search through their message history to find
+                        specific conversations or important information quickly. This feature enhances usability and
+                        efficiency.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Accessing the Messaging System</h5>
+                <p>To access the messaging system, follow these steps:</p>
+                <ol>
+                    <li><strong>Log In:</strong> Sign in to your account using your username and password.</li>
+                    <li><strong>Navigate to the Messaging Section:</strong> From your dashboard, click on the
+                        "Messaging" tab. This will take you to the messaging interface.</li>
+                    <li><strong>View Conversations:</strong> You will see a list of your recent conversations. Click on
+                        any conversation to view the message history.</li>
+                    <li><strong>Start a New Message:</strong> To send a new message, click on the "New Message" button.
+                        Enter the recipient's name or select from the list of users, type your message, and hit "Send."
+                    </li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Sending and Receiving Messages</h5>
+                <p>Here’s how to send and receive messages effectively:</p>
+                <ol>
+                    <li><strong>Compose a Message:</strong> Click on the "New Message" button, select the recipient(s),
+                        and type your message in the text box. You can also attach files if needed.</li>
+                    <li><strong>Send the Message:</strong> Once you are satisfied with your message, click the "Send"
+                        button. The recipient will receive a notification of the new message.</li>
+                    <li><strong>Read Messages:</strong> When you receive a message, you will be notified. Click on the
+                        notification or navigate to the messaging section to read the message.</li>
+                    <li><strong>Reply to Messages:</strong> To reply to a message, open the conversation and type your
+                        response in the text box at the bottom. Click "Send" to deliver your reply.</li>
+                    <li><strong>Manage Conversations:</strong> You can archive or delete conversations to keep your
+                        messaging interface organized. Archived messages can be accessed later if needed.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Best Practices for Using the Messaging System</h5>
+                <p>To ensure effective communication through the messaging system, consider the following best
+                    practices:</p>
+                <ul>
+                    <li><strong>Be Clear and Concise:</strong> When composing messages, be clear and to the point. This
+                        helps the recipient understand your message quickly and reduces the chances of miscommunication.
+                    </li>
+                    <li><strong>Use Professional Language:</strong> Maintain a professional tone in your messages,
+                        especially when communicating with faculty or administration. This fosters respect and clarity
+                        in communication.</li>
+                    <li><strong>Respond Promptly:</strong> Aim to respond to messages in a timely manner. This shows
+                        respect for the sender's time and helps maintain effective communication.</li>
+                    <li><strong>Utilize Group Messaging Wisely :</strong> When using group messaging, ensure that all
+                        participants are relevant to the conversation. Avoid unnecessary messages to keep discussions
+                        focused and productive.</li>
+                    <li><strong>Keep Personal Information Private:</strong> Avoid sharing sensitive personal information
+                        through the messaging system. Use secure channels for any confidential discussions.</li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Troubleshooting Common Issues</h5>
+                <p>If you encounter issues with the messaging system, consider the following troubleshooting tips:</p>
+                <ul>
+                    <li><strong>Check Internet Connection:</strong> Ensure that you have a stable internet connection,
+                        as connectivity issues can affect message delivery.</li>
+                    <li><strong>Refresh the Page:</strong> If messages are not appearing, try refreshing the messaging
+                        interface to load the latest updates.</li>
+                    <li><strong>Clear Cache and Cookies:</strong> If you experience persistent issues, clearing your
+                        browser's cache and cookies may resolve the problem.</li>
+                    <li><strong>Contact Support:</strong> If you continue to face difficulties, reach out to the
+                        technical support team for assistance.</li>
+                </ul>
+
+            </div>
+
+            <div id="content8" class="content-section d-none">
+                <h2>Enrollment & Payment</h2>
+                <p>Manage student enrollments and payments for tuition and other services. The School Management System
+                    provides a streamlined process for students to enroll in courses and manage their financial
+                    obligations efficiently.</p>
+
+                <h5 class="fw-bold mt-4">Enrollment Process</h5>
+                <p>The enrollment process allows students to register for courses and programs offered by the
+                    institution. Here’s how it works:</p>
+
+                <ol>
+                    <li><strong>Access the Enrollment Section:</strong> After logging in, navigate to the "Enrollment"
+                        section from your dashboard. This area provides an overview of available programs and courses.
+                    </li>
+                    <li><strong>Select a Program:</strong> Browse through the list of programs and select the one you
+                        wish to enroll in. You can view details about each program, including its structure, duration,
+                        and requirements.</li>
+                    <li><strong>Choose Courses:</strong> Once you select a program, you will be presented with a list of
+                        courses associated with that program. Choose the courses you want to enroll in based on your
+                        academic plan and interests.</li>
+                    <li><strong>Submit Enrollment Request:</strong> After selecting your courses, submit your enrollment
+                        request. You may be required to provide additional information, such as your admission number
+                        and qualification details.</li>
+                    <li><strong>Receive Confirmation:</strong> Upon successful enrollment, you will receive a
+                        confirmation message, and your enrollment status will be updated in the system. You can view
+                        your enrolled courses in the "My Courses" section.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Payment Process</h5>
+                <p>The payment process allows students to manage their tuition fees and other financial obligations.
+                    Here’s how it works:</p>
+
+                <ol>
+                    <li><strong>View Outstanding Fees:</strong> After enrolling, navigate to the "Payments" section to
+                        view any outstanding fees associated with your courses. The system will display a breakdown of
+                        fees, including tuition, library fees, and other charges.</li>
+                    <li><strong>Select Payment Method:</strong> Choose your preferred payment method from the available
+                        options, such as credit/debit card, bank transfer, or online payment gateways. The system
+                        supports multiple payment methods for user convenience.</li>
+                    <li><strong>Enter Payment Details:</strong> Fill in the required payment information, including card
+                        details or bank account information, depending on the selected payment method. Ensure that all
+                        information is accurate to avoid payment issues.</li>
+                    <li><strong>Confirm Payment:</strong> Review your payment details and confirm the transaction. The
+                        system will process your payment securely and provide a confirmation receipt once the
+                        transaction is successful.</li>
+                    <li><strong>Track Payment History:</strong> After making a payment, you can view your payment
+                        history in the "Payments" section. This feature allows you to keep track of all transactions,
+                        including amounts paid and outstanding balances.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Managing Enrollment and Payment Details</h5>
+                <p>Users can manage their enrollment and payment details effectively through the following features:</p>
+
+                <ul>
+                    <li>
+                        <strong>Enrollment Status:</strong> Students can view their current enrollment status, including
+                        active, inactive, or pending enrollments. This helps in tracking their academic progress and
+                        ensuring they are on the right path.
+                    </li>
+                    <li>
+                        <strong>Payment Reminders:</strong> The system sends automated reminders for upcoming payment
+                        deadlines, ensuring that students do not miss important due dates. This feature helps in
+                        maintaining financial responsibility.
+                    </li>
+                    <li>
+                        <strong>Financial Aid and Scholarships:</strong> Students can apply for financial aid or
+                        scholarships directly through the system. The application process is streamlined, allowing
+                        students to submit necessary documents and track their application status.
+                    </li>
+                    <li>
+                        <strong>Payment Plans:</strong> The system may offer flexible payment plans for tuition fees,
+                        allowing students to pay in installments. This feature can ease the financial burden on students
+                        and make education more accessible.
+                    </li>
+                    <li>
+                        <strong>Access to Financial Reports:</strong> Students can generate financial reports that
+                        summarize their payment history, outstanding balances, and any financial aid received. This
+                        feature provides transparency and helps students manage their finances effectively.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Support for Enrollment and Payment Issues</h5>
+                <p>If you encounter any issues during the enrollment or payment process, the School Management System
+                    provides support options:</p>
+
+                <ul>
+                    <li>
+                        <strong>Help Center:</strong> Access the help center for troubleshooting guides and FAQs related
+                        to enrollment and payment processes. This resource can help you resolve common issues
+                        independently.
+                    </li>
+                    <li>
+                        <strong>Contact Support:</strong> If you cannot find a solution in the help center, you can
+                        submit a support request through the system. Provide details about your issue, and the support
+                        team will assist you promptly.
+                    </li>
+                    <li>
+                        <strong>Live Chat:</strong> For urgent inquiries, use the live chat feature to connect with a
+                        support representative in real-time. This option allows for immediate assistance with enrollment
+                        or payment-related questions.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="content9" class="content-section d-none">
+                <h2>Library & Community</h2>
+                <p>The School Management System provides robust library and community features designed to enhance the
+                    educational experience for students, faculty, and staff. This section outlines how these features
+                    work and how users can benefit from them.</p>
+
+                <h5 class="fw-bold mt-4">Library Management</h5>
+                <p>The library management system is designed to facilitate the efficient management of library
+                    resources, including books, journals, and digital materials. Here’s how it works:</p>
+
+                <ul>
+                    <li>
+                        <strong>Cataloging Resources:</strong> Librarians can easily add new books and resources to the
+                        library catalog. Each entry includes essential details such as title, author, genre, publication
+                        year, and availability status. This ensures that users can quickly find the resources they need.
+                    </li>
+                    <li>
+                        <strong>Search Functionality:</strong> Users can search for books and resources using various
+                        filters, including title, author, genre, and publication year. This feature allows for quick
+                        access to library materials, saving time and effort.
+                    </li>
+                    <li>
+                        <strong>Borrowing and Returning:</strong> The system tracks the borrowing and returning of
+                        library materials. Users can check out books for a specified period and receive notifications
+                        for due dates, helping to manage library inventory effectively.
+                    </li>
+                    <li>
+                        <strong>Reservation System:</strong> If a book is currently checked out, users can place a
+                        reservation to be notified when it becomes available. This feature ensures that users have
+                        access to popular resources without unnecessary delays.
+                    </li>
+                    <li>
+                        <strong>Library Analytics:</strong> Librarians can generate reports on library usage, including
+                        the most borrowed books, user engagement, and inventory status. This data helps in making
+                        informed decisions about resource allocation and purchasing new materials.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Community Features</h5>
+                <p>The community features of the School Management System foster interaction and collaboration among
+                    students, faculty, and staff. Here’s how these features work:</p>
+
+                <ul>
+                    <li>
+                        <strong>Discussion Forums:</strong> Users can participate in discussion forums where they can
+                        ask questions, share knowledge, and engage in academic discussions. This feature promotes a
+                        collaborative learning environment and encourages peer-to-peer support.
+                    </li>
+                    <li>
+                        <strong>Event Announcements:</strong> The system allows users to create and share announcements
+                        for upcoming events, workshops, and seminars. This feature ensures that all members of the
+                        community are informed about important activities and opportunities.
+                    </li>
+                    <li>
+                        <strong>Messaging System:</strong> Users can send direct messages to each other within the
+                        system. This feature facilitates quick communication between students and faculty, allowing for
+                        efficient information sharing and collaboration on projects.
+                    </li>
+                    <li>
+                        <strong>Group Projects:</strong> The community features support group projects by allowing users
+                        to create groups, share resources, and collaborate on assignments. This encourages teamwork and
+                        enhances the learning experience.
+                    </li>
+                    <li>
+                        <strong>Feedback and Suggestions:</strong> Users can provide feedback on courses, resources, and
+                        community features. This input is valuable for continuous improvement and helps the
+                        administration understand the needs and preferences of the community.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">How to Access Library and Community Features</h5>
+                <p>To access the library and community features, follow these steps:</p>
+                <ol>
+                    <li><strong>Log In:</strong> Sign in to your account using your username and password.</li>
+                    <li><strong>Navigate to the Library Section:</strong> From the main dashboard, click on the
+                        "Library" tab to access library resources, search for books, and manage your borrowing
+                        activities.</li>
+                    <li><strong>Explore Community Features:</strong> Click on the "Community" tab to participate in
+                        discussions, view announcements, and connect with other users.</li>
+                    <li><strong>Utilize Search and Filters:</strong> Use the search functionality to find specific
+                        resources in the library or filter community discussions by topics of interest.</li>
+                    <li><strong>Engage with Others:</strong> Join discussions, post questions, and collaborate with
+                        peers on group projects to enhance your learning experience.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Benefits of Library and Community Features</h5>
+                <p>The library and community features provide numerous benefits, including:</p>
+                <ul>
+                    <li><strong>Enhanced Learning Experience:</strong> Access to a wide range of resources and
+                        collaborative opportunities enriches the educational experience for all users.</li>
+                    <li><strong>Improved Communication:</strong> The messaging system and discussion forums facilitate
+                        effective communication among students and faculty, fostering a supportive learning environment.
+                    </li>
+                    <li><strong>Resource Accessibility:</strong> The library management system ensures that users can
+                        easily find and access the materials they need for their studies.</li>
+                    <li><strong>Community Engagement:</strong> Participation in community features encourages users to
+                        connect with one another, share knowledge, and build relationships within the institution.</li>
+                    <li><strong>Data-Driven Decisions:</strong> Analytics from library usage and community engagement
+                        help administrators make informed decisions about resource allocation and program development.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="content10" class="content-section d-none">
+                <h2>Security Features</h2>
+                <p>The School Management System prioritizes the security of user data and the integrity of the system. A
+                    range of security measures are implemented to protect sensitive information and ensure a safe user
+                    experience. This section outlines the key security features in place.</p>
+
+                <h5 class="fw-bold mt-4">1. User Authentication</h5>
+                <p>Robust user authentication mechanisms are essential for ensuring that only authorized individuals can
+                    access the system. The following methods are employed:</p>
+                <ul>
+                    <li>
+                        <strong>Email Verification:</strong> Upon registration, users must verify their email addresses.
+                        A verification link is sent to the provided email, and users must click this link to activate
+                        their accounts. This step helps prevent unauthorized account creation and ensures that users
+                        have access to their registered email.
+                    </li>
+                    <li>
+                        <strong>Strong Password Policies:</strong> Users are required to create strong passwords that
+                        meet specific criteria, including a minimum length, the inclusion of uppercase and lowercase
+                        letters, numbers, and special characters. This reduces the risk of unauthorized access due to
+                        weak passwords.
+                    </li>
+                    <li>
+                        <strong>Two-Step Authentication (2FA):</strong> For added security, the system offers two-step
+                        authentication. Users can enable this feature to require a second form of verification (such as
+                        a code sent to their mobile device) in addition to their password when logging in. This
+                        significantly enhances account security.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">2. Data Encryption</h5>
+                <p>To protect sensitive information, the School Management System employs data encryption techniques:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Encryption at Rest:</strong> All sensitive data stored in the database, such as user
+                        credentials and personal information, is encrypted. This ensures that even if unauthorized
+                        access occurs, the data remains unreadable without the proper decryption keys.
+                    </li>
+                    <li>
+                        <strong>Encryption in Transit:</strong> Data transmitted between users and the server is
+                        encrypted using SSL/TLS protocols. This protects against eavesdropping and man-in-the-middle
+                        attacks, ensuring that sensitive information remains secure during transmission.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">3. Access Control</h5>
+                <p>The system implements strict access control measures to ensure that users can only access information
+                    relevant to their roles:</p>
+                <ul>
+                    <li>
+                        <strong>Role-Based Access Control (RBAC):</strong> Users are assigned specific roles (e.g.,
+                        student, teacher, administrator) that determine their access levels within the system. This
+                        ensures that sensitive information is only accessible to authorized personnel.
+                    </li>
+                    <li>
+                        <strong>Session Management:</strong> User sessions are monitored and managed to prevent
+                        unauthorized access. Sessions automatically expire after a period of inactivity, requiring users
+                        to log in again to access the system.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">4. Regular Security Audits</h5>
+                <p>The School Management System undergoes regular security audits and vulnerability assessments to
+                    identify and address potential security risks:</p>
+                <ul>
+                    <li>
+                        <strong>Penetration Testing:</strong> The system is subjected to penetration testing by security
+                        professionals to identify vulnerabilities that could be exploited by attackers. Any identified
+                        issues are promptly addressed to enhance system security.
+                    </li>
+                    <li>
+                        <strong>Software Updates:</strong> The system is regularly updated to incorporate the latest
+                        security patches and improvements. This helps protect against known vulnerabilities and ensures
+                        that the system remains secure against emerging threats.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">5. User Education and Awareness</h5>
+                <p>Educating users about security best practices is crucial for maintaining a secure environment:</p>
+                <ul>
+                    <li>
+                        <strong>Security Training:</strong> Users receive training on how to recognize phishing
+                        attempts, create strong passwords, and protect their accounts. This empowers users to take an
+                        active role in safeguarding their information.
+                    </li>
+                    <li>
+                        <strong>Regular Security Updates:</strong> Users are informed about any security updates or
+                        changes to policies that may affect their accounts. This transparency helps build trust and
+                        encourages users to follow security protocols.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">6. Incident Response Plan</h5>
+                <p>In the event of a security breach or incident, the School Management System has a well-defined
+                    incident response plan:</p>
+                <ul>
+                    <li>
+                        <strong>Immediate Action:</strong> The response team is trained to act quickly to contain and
+                        mitigate any security incidents. This includes identifying the source of the breach and taking
+                        steps to prevent further unauthorized access.
+                    </li>
+                    <li>
+                        <strong>User Notification:</strong> Affected users are promptly notified of any security
+                        incidents that may impact their accounts. This includes providing guidance on steps they should
+                        take to secure their accounts.
+                    </li>
+                    <li>
+                        <strong>Post-Incident Review:</strong> After an incident, a thorough review is conducted to
+                        analyze the cause and effectiveness of the response. Lessons learned are used to improve
+                        security measures and prevent future incidents.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="content11" class="content-section d-none">
+                <h2>Analytics & Reports</h2>
+                <p>The School Management System provides robust analytics and reporting features that allow users to
+                    generate and view insightful reports for their institution. These tools help in making informed
+                    decisions based on data-driven insights.</p>
+
+                <h5 class="fw-bold mt-4">How Analytics Works</h5>
+                <p>Analytics in the School Management System is designed to provide users with a comprehensive view of
+                    various metrics related to student performance, financial transactions, course enrollments, and
+                    more. The system collects data from different modules and processes it to generate meaningful
+                    insights.</p>
+
+                <h5 class="fw-bold mt-4">Types of Analytics Available</h5>
+                <ul>
+                    <li>
+                        <strong>Student Performance Analytics:</strong> Track and analyze student performance across
+                        different subjects and courses. This feature allows educators to identify trends, such as which
+                        subjects students excel in or struggle with, enabling targeted interventions.
+                    </li>
+                    <li>
+                        <strong>Enrollment Analytics:</strong> Monitor enrollment trends over time, including the number
+                        of students enrolled in various programs and courses. This data helps administrators make
+                        informed decisions about resource allocation and program offerings.
+                    </li>
+                    <li>
+                        <strong>Financial Analytics:</strong> Analyze financial data related to tuition fees, payments,
+                        and outstanding balances. This feature provides insights into revenue generation and helps in
+                        budgeting and financial planning.
+                    </li>
+                    <li>
+                        <strong>Attendance Analytics:</strong> Review attendance records to identify patterns and
+                        trends. This feature can help in recognizing students who may need additional support due to
+                        frequent absences.
+                    </li>
+                    <li>
+                        <strong>Course Evaluation Reports:</strong> Gather feedback from students regarding courses and
+                        instructors. This data can be used to improve course content and teaching methods, enhancing the
+                        overall educational experience.
+                    </li>
+                    <li>
+                        <strong>Custom Reports:</strong> Users can create custom reports based on specific criteria,
+                        allowing for tailored insights that meet the unique needs of the institution.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Generating Reports</h5>
+                <p>To generate reports, follow these steps:</p>
+                <ol>
+                    <li><strong>Access the Reports Section:</strong> Navigate to the analytics or reports section from
+                        your dashboard. This area provides access to various pre-defined reports and the option to
+                        create custom reports.</li>
+                    <li><strong>Select Report Type:</strong> Choose the type of report you wish to generate. Options may
+                        include student performance, financial reports, attendance records, etc.</li>
+                    <li><strong>Set Parameters:</strong> Depending on the report type, you may need to set specific
+                        parameters, such as date ranges, course names, or student groups. This helps in filtering the
+                        data to meet your needs.</li>
+                    <li><strong>Generate Report:</strong> Click the "Generate" button to create the report. The system
+                        will process the data and present it in a user-friendly format, often including charts and
+                        graphs for better visualization.</li>
+                    <li><strong>Download or Print:</strong> Once the report is generated, you can download it in various
+                        formats (e.g., PDF, Excel) or print it directly for your records.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Interpreting Reports</h5>
+                <p>Understanding the data presented in reports is crucial for making informed decisions. Here are some
+                    tips for interpreting the analytics:</p>
+                <ul>
+                    <li><strong>Look for Trends:</strong> Identify patterns over time, such as improvements in student
+                        performance or fluctuations in enrollment numbers. This can help in recognizing successful
+                        initiatives or areas needing attention.</li>
+                    <li><strong>Compare Data:</strong> Use comparative analysis to evaluate different groups, such as
+                        comparing the performance of students in different programs or courses. This can highlight
+                        strengths and weaknesses across the institution.</li>
+                    <li><strong>Focus on Key Metrics:</strong> Pay attention to key performance indicators (KPIs)
+                        relevant to your role. For example, an administrator may focus on financial metrics, while a
+                        teacher may prioritize student performance metrics.</li>
+                    <li><strong>Utilize Visualizations:</strong> Take advantage of charts and graphs included in the
+                        reports. Visual representations can make complex data easier to understand and communicate to
+                        others.</li>
+                    <li><strong>Act on Insights:</strong> Use the insights gained from the reports to inform decisions
+                        and strategies. Whether it’s adjusting teaching methods, reallocating resources, or implementing
+                        new programs, data-driven decisions can lead to improved outcomes for students and the
+                        institution as a whole.</li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Best Practices for Using Analytics</h5>
+                <p>To maximize the benefits of the analytics and reporting features, consider the following best
+                    practices:</p>
+                <ul>
+                    <li><strong>Regularly Review Reports:</strong> Make it a habit to review reports on a regular basis
+                        to stay informed about trends and changes within the institution.</li>
+                    <li><strong>Engage Stakeholders:</strong> Share relevant reports with stakeholders, including
+                        faculty, administrators, and board members, to foster a collaborative approach to
+                        decision-making.</li>
+                    <li><strong>Train Staff:</strong> Ensure that staff members are trained on how to access and
+                        interpret reports effectively. This can enhance the overall use of analytics within the
+                        institution.</li>
+                    <li><strong>Set Goals:</strong> Use insights from analytics to set measurable goals for improvement.
+                        This can help in tracking progress and accountability.</li>
+                    <li><strong>Stay Updated:</strong> Keep abreast of new features and updates in the analytics tools
+                        to leverage the latest capabilities for your reporting needs.</li>
+                </ul>
+
+            </div>
+
+            <div id="content12" class="content-section d-none">
+                <h2>Support</h2>
+                <p>Access troubleshooting guides, FAQs, and contact information for technical support. The support
+                    system is designed to assist users in resolving issues quickly and efficiently, ensuring a smooth
+                    experience with the School Management System.</p>
+
+                <h5 class="fw-bold mt-4">How the Support System Works</h5>
+                <p>The support system is structured to provide users with multiple avenues for assistance:</p>
+                <ul>
+                    <li>
+                        <strong>Troubleshooting Guides:</strong> Comprehensive guides are available to help users
+                        resolve common issues independently. These guides cover a range of topics, including account
+                        management, course registration, and technical difficulties.
+                    </li>
+                    <li>
+                        <strong>FAQs:</strong> A frequently asked questions section addresses common inquiries and
+                        concerns. Users can find quick answers to their questions without needing to submit a support
+                        request.
+                    </li>
+                    <li>
+                        <strong>Support Request Form:</strong> If users cannot find a solution in the guides or FAQs,
+                        they can submit a support request through a dedicated form. This form allows users to provide
+                        details about their issue, ensuring that the support team has all the necessary information to
+                        assist them effectively.
+                    </li>
+                    <li>
+                        <strong>Live Chat and Email Support:</strong> For urgent issues, users can access live chat
+                        support or email the support team directly. This provides a more immediate response for critical
+                        problems.
+                    </li>
+                    <li>
+                        <strong>Ticket Tracking:</strong> Once a support request is submitted, users receive a
+                        confirmation email with a ticket number. They can use this ticket number to track the status of
+                        their request and receive updates on its resolution.
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Submitting a Support Request</h5>
+                <p>To submit a support request, follow these steps:</p>
+                <ol>
+                    <li><strong>Access the Support Request Form:</strong> Navigate to the support section of the School
+                        Management System and click on the "Submit a Support Request" button.</li>
+                    <li><strong>Fill Out the Form:</strong> Provide the following information:
+                        <ul>
+                            <li><strong>Username:</strong> Your username associated with the account.</li>
+                            <li><strong>Email:</strong> The email address linked to your account.</li>
+                            <li><strong>Issue Type:</strong> Select the type of issue you are experiencing from the
+                                dropdown menu. If your issue is not listed, you can choose "Other" and provide a
+                                description.</li>
+                            <li><strong>Description:</strong> Provide a detailed description of the issue you are
+                                facing. Include any relevant information that may help the support team understand your
+                                problem better.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Submit the Form:</strong> After filling out the form, click the "Submit" button. You
+                        will receive a confirmation message indicating that your request has been received.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Tracking Your Support Requests</h5>
+                <p>After submitting a support request, you can track its status:</p>
+                <ol>
+                    <li><strong>Check Your Email:</strong> You will receive an email confirmation with a ticket number.
+                        This ticket number is essential for tracking your request.</li>
+                    <li><strong>Visit the Support Dashboard:</strong> Log in to the School Management System and
+                        navigate to the support dashboard. Here, you can view the status of your open tickets, including
+                        whether they are pending, in progress, or resolved.</li>
+                    <li><strong>Receive Updates:</strong> The support team will communicate with you via email regarding
+                        the status of your request. Be sure to check your email regularly for updates or additional
+                        information required to resolve your issue.</li>
+                </ol>
+
+                <h5 class="fw-bold mt-4">Best Practices for Submitting Support Requests</h5>
+                <p>To ensure a smooth support experience, consider the following best practices:</p>
+                <ul>
+                    <li><strong>Be Specific:</strong> Provide as much detail as possible about the issue you are
+                        experiencing. This helps the support team understand your problem and find a solution more
+                        quickly.</li>
+                    <li><strong>Include Screenshots:</strong> If applicable, include screenshots of error messages or
+                        issues you are encountering. Visual aids can significantly assist the support team in diagnosing
+                        the problem.</li>
+                    <li><strong>Check FAQs First:</strong> Before submitting a request , review the FAQs and
+                        troubleshooting guides. Many common issues may already have documented solutions that can save
+                        you time.</li>
+                    <li><strong>Follow Up:</strong> If you do not receive a response within a reasonable timeframe, feel
+                        free to follow up on your support request using the ticket number provided in your confirmation
+                        email.</li>
+                </ul>
+
+            </div>
+
+            <div id="content13" class="content-section d-none">
+                <h2>Troubleshooting</h2>
+                <p>If you're encountering issues, this section provides solutions and tips to fix common problems. The
+                    School Management System is designed to be user-friendly, but sometimes users may face challenges.
+                    Here are some common issues and their solutions:</p>
+
+                <h5 class="fw-bold mt-4">1. Login Issues</h5>
+                <ul>
+                    <li>
+                        <strong>Problem:</strong> Unable to log in to your account.
+                        <p><strong>Solution:</strong> Ensure that you are entering the correct username and password. If
+                            you have forgotten your password, click on the "Forgot Password?" link to reset it. Check
+                            your email for the reset link and follow the instructions provided.</p>
+                    </li>
+                    <li>
+                        <strong>Problem:</strong> Account is locked or inactive.
+                        <p><strong>Solution:</strong> If your account is locked, contact the system administrator or
+                            support team for assistance. They can help unlock your account or activate it if necessary.
+                        </p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">2. Enrollment Issues</h5>
+                <ul>
+                    <li>
+                        <strong>Problem:</strong> Unable to enroll in a course or program.
+                        <p><strong>Solution:</strong> Ensure that you meet the prerequisites for the course or program.
+                            If you are already enrolled in another program, you may need to drop it before enrolling in
+                            a new one. If the issue persists, contact the administration for assistance.</p>
+                    </li>
+                    <li>
+                        <strong>Problem:</strong> Enrollment confirmation not received.
+                        <p><strong>Solution:</strong> Check your email (including the spam folder) for the confirmation
+                            message. If you do not receive it within a reasonable time, log in to your account and check
+                            your enrollment status in the "My Courses" section.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">3. Payment Issues</h5>
+                <ul>
+                    <li>
+                        <strong>Problem:</strong> Payment not processing or transaction failed.
+                        <p><strong>Solution:</strong> Ensure that your payment details are entered correctly. Check your
+                            internet connection and try again. If the problem persists, consider using a different
+                            payment method or contacting your bank for assistance.</p>
+                    </li>
+                    <li>
+                        <strong>Problem:</strong> Payment confirmation not received.
+                        <p><strong>Solution:</strong> Check your email for the payment confirmation. If you do not
+                            receive it, log in to your account and check your payment history in the "Payments" section.
+                            If the payment is not reflected, contact support for assistance.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">4. Library Access Issues</h5>
+                <ul>
+                    <li>
+                        <strong>Problem:</strong> Unable to access library resources.
+                        <p><strong>Solution:</strong> Ensure that you are logged in to your account. If you are still
+                            unable to access resources, check if the library is open or if there are any restrictions on
+                            certain materials. Contact the librarian for further assistance.</p>
+                    </li>
+                    <li>
+                        <strong>Problem:</strong> Book not found in the catalog.
+                        <p><strong>Solution:</strong> Use the search functionality to check for the book by title,
+                            author, or ISBN. If the book is still not found, it may not be available in the library. You
+                            can request the library to acquire the book or check with other libraries.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">5. Community Features Issues</h5>
+                <ul>
+                    <li>
+                        <strong>Problem:</strong> Unable to post in forums or discussions.
+                        <p><strong>Solution:</strong> Ensure that you are logged in and have the necessary permissions
+                            to post. If you are still unable to post, check if there are any restrictions on the forum
+                            or contact the community moderator for assistance.</p>
+                    </li>
+                    <li>
+                        <strong>Problem:</strong> Not receiving notifications for messages or announcements.
+                        <p><strong>Solution:</strong> Check your notification settings in your account preferences.
+                            Ensure that notifications are enabled for messages and announcements. If the issue persists,
+                            try logging out and back in, or contact support for help.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">6. Technical Issues</h5>
+                <ul>
+                    <li>
+                        <strong>Problem:</strong> System is slow or unresponsive.
+                        <p><strong>Solution:</strong> Check your internet connection and try refreshing the page. If the
+                            problem continues, clear your browser cache and cookies. If the issue persists, it may be a
+                            server-side problem; contact support for assistance.</p>
+                    </li>
+                    <li>
+                        <strong>Problem:</strong> Error messages when using the system.
+                        <p><strong>Solution:</strong> Take note of the error message and any error codes. This
+                            information can be helpful when reporting the issue to support. Try logging out and back in,
+                            or refreshing the page to see if the issue resolves itself.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Contacting Support</h5>
+                <p>If you are unable to resolve your issue using the troubleshooting tips provided, you can contact the
+                    support team for further assistance:</p>
+                <ul>
+                    <li><strong>Submit a Support Request:</strong> Use the support request form available in the system
+                        to describe your issue in detail.</li>
+                    <li><strong>Live Chat:</strong> For urgent issues, use the live chat feature to connect with a
+                        support representative in real-time.</li>
+                    <li><strong>Email Support:</strong> You can also reach out to the support team via email at
+                        support@example.com for assistance.</li>
+                </ul>
+
+            </div>
+
+            <div id="content14" class="content-section d-none">
+                <h2>FAQs</h2>
+                <p>Frequently asked questions about the School Management System, including installation, configuration,
+                    and usage. This section aims to provide quick answers to common inquiries and help users navigate
+                    the system effectively.</p>
+
+                <h5 class="fw-bold mt-4">General Questions</h5>
+                <ul>
+                    <li>
+                        <strong>What is the School Management System?</strong>
+                        <p>The School Management System is a comprehensive platform designed to streamline various
+                            administrative tasks within educational institutions. It includes features for managing
+                            student enrollments, course registrations, payments, library resources, and communication
+                            among students, faculty, and staff.</p>
+                    </li>
+                    <li>
+                        <strong>Who can use the School Management System?</strong>
+                        <p>The system is designed for use by students, teachers, administrators, and support staff. Each
+                            user role has specific access rights and functionalities tailored to their needs.</p>
+                    </li>
+                    <li>
+                        <strong>How do I create an account?</strong>
+                        <p>To create an account, visit the sign-up page and fill out the registration form with your
+                            personal details. After submitting the form, you will receive a verification email to
+                            activate your account.</p>
+                    </li>
+                    <li>
+                        <strong>What should I do if I forget my password?</strong>
+                        <p>If you forget your password, click on the "Forgot Password?" link on the login page. You will
+                            be prompted to enter your email address, and a password reset link will be sent to your
+                            email.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Enrollment and Payment Questions</h5>
+                <ul>
+                    <li>
+                        <strong>How do I enroll in a course?</strong>
+                        <p>To enroll in a course, log in to your account, navigate to the "Enrollment" section, select
+                            the desired program, and choose the courses you wish to enroll in. Follow the prompts to
+                            complete your enrollment.</p>
+                    </li>
+                    <li>
+                        <strong>What payment methods are accepted?</strong>
+                        <p>The School Management System supports various payment methods, including credit/debit cards,
+                            bank transfers, and online payment gateways. You can select your preferred method during the
+                            payment process.</p>
+                    </li>
+                    <li>
+                        <strong>Can I request a payment plan?</strong>
+                        <p>Yes, the system may offer flexible payment plans for tuition fees. You can inquire about
+                            available options during the payment process or contact the administration for more
+                            information.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Library and Community Questions</h5>
+                <ul>
+                    <li>
+                        <strong>How do I access library resources?</strong>
+                        <p>To access library resources, log in to your account and navigate to the "Library" section.
+                            You can search for books, view available resources, and manage your borrowing activities
+                            from this area.</p>
+                    </li>
+                    <li>
+                        <strong>Can I submit reviews for courses and instructors?</strong>
+                        <p>Yes, students can submit reviews for courses and instructors. Navigate to the "Reviews"
+                            section, select the course or instructor you wish to review, and provide your feedback.</p>
+                    </li>
+                    <li>
+                        <strong>How can I participate in community discussions?</strong>
+                        <p>To participate in community discussions, go to the "Community" section and join the relevant
+                            forums or groups. You can post questions, share insights, and engage with other users.</p>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Technical Support Questions</h5>
+                <ul>
+                    <li>
+                        <strong>What should I do if I encounter a technical issue?</strong>
+                        <p>If you encounter a technical issue, first check the troubleshooting guides and FAQs in the
+                            support section. If you cannot find a solution, submit a support request through the system
+                            for assistance.</p>
+                    </li>
+                    <li>
+                        <strong>How can I contact technical support?</strong>
+                        <p>You can contact technical support through the "Support" section of the system. Fill out the
+                            support request form with details about your issue, and the support team will respond
+                            promptly.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links d-flex justify-content-between p-5">
+                <a href="#" id="prevBtn"><i class="fas fa-arrow-left"></i> Previous Section</a>
+                <a href="#" id="nextBtn">Next Section <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="scrollup">
+        <button id="scroll-top" class="scroll-to-top"><i class="fa-regular fa-arrow-up-long"></i></button>
+    </div>
+    <!--scrollup-->
+
+    <!-- JS here -->
+    <script src="./landing-page-assets/js/vendor/jquary-3.6.0.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/bootstrap-bundle.js"></script>
+    <script src="./landing-page-assets/js/vendor/jquery.isotope.js"></script>
+    <script src="./landing-page-assets/js/vendor/waypoints.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/moment.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/daterangepicker.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/venobox.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/odometer.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/countdown.js"></script>
+    <script src="./landing-page-assets/js/vendor/meanmenu.js"></script>
+    <script src="./landing-page-assets/js/vendor/smooth-scroll.js"></script>
+    <script src="./landing-page-assets/js/vendor/imagesloaded-pkgd.js"></script>
+    <script src="./landing-page-assets/js/vendor/wow.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/nice-select.js"></script>
+    <script src="./landing-page-assets/js/vendor/swiper.min.js"></script>
+    <script src="./landing-page-assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/feature-navigation.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize - show first content section
+            $(".content-section").addClass("d-none");
+            $("#content1").removeClass("d-none");
+
+            // Handle submenu toggle with animation
+            $(".has-submenu").click(function (e) {
+                e.preventDefault();
+                $(this).toggleClass("active");
+                $(this).find(".fa-caret-down").toggleClass("fa-rotate-180");
+                $(this).next(".submenu").slideToggle(300);
+            });
+
+            // Handle sidebar navigation links
+            $(".sidebar a:not(.has-submenu)").click(function (e) {
+                e.preventDefault();
+
+                // Remove 'active' class from all links and add to the clicked link
+                $(".sidebar a:not(.has-submenu)").removeClass("active");
+                $(this).addClass("active");
+
+                // Hide all content sections
+                $(".content-section").addClass("d-none");
+
+                // Show the target content section
+                var target = $(this).data("target");
+                $(target).removeClass("d-none");
+
+                // On mobile, hide sidebar after clicking a link
+                if ($(window).width() < 992) {
+                    $(".sidebar").removeClass("show");
+                }
+            });
+
+            // Submenu link handling
+            $(".submenu a").click(function (e) {
+                e.preventDefault();
+
+                // Remove active class from all links
+                $(".sidebar a").removeClass("active");
+                $(this).addClass("active");
+
+                // Hide all content sections
+                $(".content-section").addClass("d-none");
+
+                // Show the target content section
+                var target = $(this).data("target");
+                $(target).removeClass("d-none");
+
+                // On mobile, hide sidebar after clicking a link
+                if ($(window).width() < 992) {
+                    $(".sidebar").removeClass("show");
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            let currentSectionIndex = 0;
+            const sections = $(".content-section");
+            const totalSections = sections.length;
+
+            // Function to show the current section
+            function showSection(index) {
+                sections.addClass("d-none"); // Hide all sections
+                $(sections[index]).removeClass("d-none"); // Show the current section
+
+                // Update the active class in the sidebar
+                $(".sidebar a").removeClass("active");
+                $(".sidebar a").eq(index).addClass("active");
+            }
+
+            // Initial display
+            showSection(currentSectionIndex);
+
+            // Previous button click event
+            $("#prevBtn").click(function (e) {
+                e.preventDefault();
+                if (currentSectionIndex > 0) {
+                    currentSectionIndex--;
+                    showSection(currentSectionIndex);
+                }
+            });
+
+            // Next button click event
+            $("#nextBtn").click(function (e) {
+                e.preventDefault();
+                if (currentSectionIndex < totalSections - 1) {
+                    currentSectionIndex++;
+                    showSection(currentSectionIndex);
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            // Sidebar toggle button with animation
+            $(".sidebar-toggle").click(function () {
+                $(".sidebar").toggleClass("show");
+                $(this).toggleClass("active");
+            });
+
+            // Close sidebar when clicking outside on mobile
+            $(document).on('click touchstart', function (e) {
+                // Only apply this for mobile views
+                if ($(window).width() < 992) {
+                    if (!$(e.target).closest('.sidebar').length && !$(e.target).closest('.sidebar-toggle').length) {
+                        $(".sidebar").removeClass("show");
+                    }
+                }
+            });
+        });
+    </script>
+
+    </script>
+
+</body>
+
+</html>
