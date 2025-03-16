@@ -35,13 +35,24 @@
 /*======================================
     Preloader activation
 ========================================*/
-    $(window).on("load", function (event) {
-        $("#preloader").delay(1000).fadeOut(500);
-    });
+// Original preloader functionality commented out
+/*
+$(window).on("load", function (event) {
+    $("#preloader").delay(1000).fadeOut(500);
+});
 
-    $(".preloader-close").on("click", function () {
-        $("#preloader").delay(0).fadeOut(500);
-    });
+$(".preloader-close").on("click", function () {
+    $("#preloader").delay(0).fadeOut(500);
+});
+*/
+
+// New functionality: Show preloader for exactly 1 second
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        $("#preloader").fadeOut(500); // Fade out over 0.5 seconds
+    }, 1000); // Wait for 1 second before fading out
+});
+
 
     $(document).ready(function () {
 
