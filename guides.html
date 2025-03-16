@@ -1476,11 +1476,11 @@
                 e.preventDefault();
                 $(this).toggleClass("active");
                 $(this).find(".fa-caret-down").toggleClass("fa-rotate-180");
-                $(this).next(".submenu").slideToggle(300);
+                $(this).next(".submenu").toggleClass("show");
             });
 
-            // Initialize submenu as hidden
-            $(".submenu").hide();
+            // Initialize submenu state
+            $(".submenu").removeClass("show");
 
             // Handle sidebar navigation links
             $(".sidebar a:not(.has-submenu)").click(function (e) {
