@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="About Us - Comprehensive solution for educational institutions">
+
+    <!-- Site Title -->
+    <title>About Us</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="./landing-page-assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="./landing-page-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/venobox.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/animate.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/keyframe-animation.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/odometer.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/nice-select.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./landing-page-assets/css/main.css">
+</head>
+
+<body>
+    <div id="header-component"></div>
+    <script>
+        fetch('./components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-component').innerHTML = data;
+            });
+    </script>
+
+<section class="hero-section overflow-hidden p-0">
+    <div class="container-fluid hero-page">
+        <div class="hero-hero mx-1" data-aos="fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <div class="hero-content">
+                            <h1 class="display-3 fw-bold mb-4 text-white">About Us</h1>
+                            <p class="lead mb-4 text-white">Transforming Education Through Innovative Technology Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-page {
+        padding: 20px 10px;
+    }
+
+    .hero-hero {
+        background: url('./landing-page-assets/img/bg-img/footer-bg.png') no-repeat center center;
+        background-size: cover;
+        padding: 120px 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+
+    .hero-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 30px;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-content h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content p {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+</style>
+
+<section class="about-section pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12">
+                <div class="about-img-wrap wow fade-in-left" data-wow-delay="400ms">
+                    <div class="about-img-1">
+                        <img src="./landing-page-assets/img/images/about-img-1.jpg" alt="about">
+                        <div class="video-btn">
+                            <a class="video-popup venobox" data-autoplay="true" data-vbtype="video"
+                                href="https://youtu.be/JwC-Qx1lJso">
+                                <div class="play-btn">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-img-2">
+                        <img src="./landing-page-assets/img/images/about-img-2.jpg" alt="about">
+                    </div>
+                    <div class="about-hero">
+                        <!-- <div class="icon"><i class="fa-sharp fa-regular fa-phone-volume"></i></div> -->
+                        <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="content">
+                            <span>Online Support</span>
+                            <!-- <a href="tel:+2581523659">+258 152 3659</a> -->
+                            <a href="mailto:halilus@lcpd.net">halilus@lcpd.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12">
+                <div class="about-content">
+                    <div class="section-heading mb-40">
+                        <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span
+                                class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Our Mission</h4>
+                        <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Revolutionizing School
+                            Management <br>for Modern Education</h2>
+                        <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">Founded with a vision to transform educational administration, LCPD School Management System has been at the forefront of digital education solutions. Our platform combines cutting-edge technology with user-friendly design to create an ecosystem where administrators, teachers, and students can thrive. We believe in making education management accessible, efficient, and innovative.</p>
+                    </div>
+                    <!-- <div class="about-counter-items wow fade-in-bottom" data-wow-delay="600ms">
+                        <div class="about-counter-item">
+                            <div class="icon"><img src="./landing-page-assets/img/icon/about-1.png" alt="about">
+                            </div>
+                            <div class="content">
+                                <h3 class="title"><span class="odometer" data-count="6">0</span><span
+                                        class="number">+</span></h3>
+                                <p>Core Features <br>Available</p>
+                            </div>
+                        </div>
+                        <div class="about-counter-item">
+                            <div class="icon"><img src="./landing-page-assets/img/icon/about-2.png" alt="about">
+                            </div>
+                            <div class="content">
+                                <h3 class="title"><span class="odometer" data-count="6.7">0</span><span
+                                        class="number">k+</span></h3>
+                                <p>Teachers and Staff <br>Supported</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="about-btn wow fade-in-bottom" data-wow-delay="700ms">
+                        <a href="guides.html" class="ed-primary-btn">View User Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./ about-section -->
+
+<section class="promo-section pt-120 pb-120 overflow-hidden">
+    <div class="bg-item">
+        <div class="bg-shape-1"></div>
+        <div class="bg-shape-2"></div>
+    </div>
+    <div class="shapes">
+        <div class="shape shape-1"><img src="./landing-page-assets/img/shapes/promo-shape-1.png" alt="shape"></div>
+        <div class="shape shape-2"><img src="./landing-page-assets/img/shapes/promo-shape-2.png" alt="shape"></div>
+    </div>
+    <div class="container">
+        <div class="section-heading promo-heading text-center white-content">
+            <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span class="heading-icon"><i
+                        class="fa-sharp fa-solid fa-bolt"></i></span>Our Values</h4>
+            <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">What Sets Us Apart</h2>
+        </div>
+        <div class="row gy-lg-0 gy-4 justify-content-center promo-wrap">
+            <div class="col-lg-4 col-md-6">
+                <div class="promo-item white-content wow fade-in-bottom" data-wow-delay="200ms">
+                    <div class="promo-thumb">
+                        <img class="main-img" src="./landing-page-assets/img/images/promo-img-1.png" alt="promo">
+                        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    </div>
+                    <h3 class="title">Innovation First</h3>
+                    <p>We continuously evolve our platform<br>with cutting-edge technology<br>and user feedback.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="promo-item white-content wow fade-in-bottom" data-wow-delay="400ms">
+                    <div class="promo-thumb">
+                        <img class="main-img" src="./landing-page-assets/img/images/promo-img-2.png" alt="promo">
+                        <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                    <h3 class="title">Customer Success</h3>
+                    <p>Your success is our priority, with<br>dedicated support and training<br>at every step.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="promo-item white-content wow fade-in-bottom" data-wow-delay="600ms">
+                    <div class="promo-thumb">
+                        <img class="main-img" src="./landing-page-assets/img/images/promo-img-3.png" alt="promo">
+                        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    </div>
+                    <h3 class="title">Trust & Security</h3>
+                    <p>We maintain the highest standards<br>of data security and privacy<br>for your institution.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./ promo-section -->
+
+<section class="faq-section pt-120 pb-120">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12">
+                <div class="faq-img-wrap wow fade-in-left" data-wow-delay="400ms">
+                    <div class="faq-img">
+                        <img src="./landing-page-assets/img/images/faq-img.png" alt="faq">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="faq-content content-1">
+                    <div class="section-heading mb-30">
+                        <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span
+                                class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Frequently
+                            Asked Questions</h4>
+                        <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Everything You Need to
+                            Know About Our School Management System</h2>
+                    </div>
+                    <div class="faq-accordion">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item wow fade-in-bottom" data-wow-delay="400ms">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne"><span>01.</span>What features does the School
+                                        Management System offer?</button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Our School Management System offers comprehensive features including student
+                                        enrollment management, course registration, attendance tracking, grade
+                                        management, financial administration, library resources, and communication
+                                        tools. The system is designed to streamline administrative tasks and enhance
+                                        the educational experience for all users.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fade-in-bottom" data-wow-delay="200ms">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo"><span>02.</span>How secure
+                                        is the School Management System?</button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Our system implements robust security measures including encrypted data
+                                        transmission, secure user authentication, role-based access control, and
+                                        regular security updates. We prioritize the protection of sensitive
+                                        information and maintain compliance with data protection regulations.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fade-in-bottom" data-wow-delay="200ms">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree"><span>03.</span>What
+                                        kind of support and training is available?</button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We provide comprehensive support including detailed documentation, video
+                                        tutorials, live training sessions, and dedicated customer support. Our help
+                                        desk is available to assist with technical issues, and we regularly update
+                                        our resources based on user feedback and system updates.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./ faq-section -->
+
+<section class="content-section pt-120 pb-120 overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="content-img-wrap wow fade-in-left" data-wow-delay="400ms">
+                    <div class="content-img-1"><img src="./landing-page-assets/img/images/content-img-1.png"
+                            alt="System Setup Process"></div>
+                    <div class="content-img-2"><img src="./landing-page-assets/img/images/content-img-2.png"
+                            alt="Data Migration"></div>
+                    <div class="content-img-3"><img src="./landing-page-assets/img/images/content-img-3.png"
+                            alt="User Training"></div>
+                    <div class="border-shape"></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="content-info">
+                    <div class="section-heading mb-20">
+                        <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span
+                                class="heading-icon"><i
+                                    class="fa-sharp fa-solid fa-rocket"></i></span>Our Journey</h4>
+                        <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Building the Future of
+                            <br>Education Together</h2>
+                    </div>
+                    <p class="mb-30 wow fade-in-bottom" data-wow-delay="500ms">Our journey began with a simple mission: to make education management more efficient and accessible. Today, we're proud to serve educational institutions worldwide, helping them embrace digital transformation and create better learning environments for their students.
+                    </p>
+                    <div class="content-item mb-30 wow fade-in-bottom" data-wow-delay="600ms">
+                        <div class="icon"><i class="fas fa-history" style="color: red; font-size: 28px;"></i></div>
+                        <div class="content">
+                            <h4 class="title">Our History</h4>
+                            <p>From our inception, we've been committed to innovation in education technology. Our platform has evolved through years of research, development, and valuable feedback from educational institutions worldwide.</p>
+                        </div>
+                    </div>
+                    <div class="content-item wow fade-in-bottom" data-wow-delay="700ms">
+                        <div class="icon"><i class="fas fa-bullseye" style="color: red; font-size: 28px;"></i></div>
+                        <div class="content">
+                            <h4 class="title">Our Vision</h4>
+                            <p>We envision a future where education management is seamless, intuitive, and accessible to all. Our ongoing commitment to innovation and customer success drives us to continuously improve and expand our platform's capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./ content-section -->
+
+    <div id="footer-component"></div>
+    <script>
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-component').innerHTML = data;
+            });
+    </script>
+
+    <!-- JS here -->
+    <script src="./landing-page-assets/js/vendor/jquary-3.6.0.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/bootstrap-bundle.js"></script>
+    <script src="./landing-page-assets/js/vendor/jquery.isotope.js"></script>
+    <script src="./landing-page-assets/js/vendor/waypoints.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/moment.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/daterangepicker.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/venobox.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/odometer.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/countdown.js"></script>
+    <script src="./landing-page-assets/js/vendor/meanmenu.js"></script>
+    <script src="./landing-page-assets/js/vendor/smooth-scroll.js"></script>
+    <script src="./landing-page-assets/js/vendor/imagesloaded-pkgd.js"></script>
+    <script src="./landing-page-assets/js/vendor/wow.min.js"></script>
+    <script src="./landing-page-assets/js/vendor/nice-select.js"></script>
+    <script src="./landing-page-assets/js/vendor/swiper.min.js"></script>
+    <script src="./landing-page-assets/js/main.js"></script>
+</body>
+
+</html> 

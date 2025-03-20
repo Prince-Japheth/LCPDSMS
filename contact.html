@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./landing-page-assets/css/daterangepicker.css">
     <link rel="stylesheet" href="./landing-page-assets/css/swiper.min.css">
     <link rel="stylesheet" href="./landing-page-assets/css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,62 +42,205 @@
             });
     </script>
 
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <!-- Contact Section -->
-                <div class="container mt-5 pt-5">
-                    <h2 class="text-center mt-4">Contact Us</h2>
-                    <p class="text-center text-muted">If you have any questions or need assistance, feel free to reach
-                        out to us using the contact details below.</p>
-
-                    <div class="row mt-5">
-                        <div class="col-md-6 mb-2">
-                            <div class="card contact-card p-3">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">General Inquiries</h5>
-                                    <p><i class="fas fa-envelope me-2"></i>Email: <a
-                                            href="mailto:princejaphethjj@gmail.com">princejaphethjj@gmail.com</a></p>
-                                    <p><i class="fas fa-envelope me-2"></i>Email: <a
-                                            href="mailto:halilus@lcpd.net">halilus@lcpd.net</a></p>
-                                    <!-- <p><i class="fas fa-phone me-2"></i>Phone: <a href="tel:+1234567890">+1 (234)
-                                            567-890</a></p> -->
-                                </div>
-                            </div>
+    <div class="container-fluid contact-page">
+        <div class="contact-hero mx-1 my-5" data-aos="fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <div class="hero-content">
+                            <h1 class="display-3 fw-bold mb-4 text-white">Get in Touch</h1>
+                            <p class="lead mb-4 text-white">We're here to help! Reach out to us through any of our contact channels below.</p>
                         </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="card contact-card p-3">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Technical Support</h5>
-                                    <p><i class="fas fa-envelope me-2"></i>Email: <a
-                                            href="mailto:omoleyemarvellous@gmail.com">omoleyemarvellous@gmail.com</a></p>
-                                    <p><i class="fas fa-envelope me-2"></i>Email: <a
-                                            href="mailto:princejaphethjj@gmail.com">princejaphethjj@gmail.com</a></p>
-                                    <!-- <p><i class="fas fa-phone me-2"></i>Phone: <a href="tel:+0987654321">+1 (098)
-                                            765-4321</a></p> -->
-                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-info" class="contact-info-section">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>General Inquiries</h3>
+                            <div class="contact-details">
+                                <a href="mailto:halilus@lcpd.net" class="contact-link">
+                                    <i class="fas fa-envelope me-2"></i>halilus@lcpd.net
+                                </a>
+                                <a href="mailto:princejaphethjj@gmail.com" class="contact-link">
+                                    <i class="fas fa-envelope me-2"></i>princejaphethjj@gmail.com
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="row">
-                        <div class="col-md-12">
-                            <div class="card contact-card p-3">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Office Address</h5>
-                                    <p><i class="fas fa-map-marker-alt me-2"></i>Docs Inc.<br>
-                                        123 Documentation Lane,<br>
-                                        Suite 456,<br>
-                                        Cityville, ST 12345<br>
-                                        Country</p>
-                                </div>
+                    <div class="col-lg-4">
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>Technical Support</h3>
+                            <div class="contact-details">
+                                <a href="mailto:omoleyemarvellous@gmail.com" class="contact-link">
+                                    <i class="fas fa-envelope me-2"></i>omoleyemarvellous@gmail.com
+                                </a>
+                                <a href="mailto:princejaphethjj@gmail.com" class="contact-link">
+                                    <i class="fas fa-envelope me-2"></i>princejaphethjj@gmail.com
+                                </a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                            <div class="contact-details address">
+                                <p>LCPD Inc.</p>
+                                <p>Lincoln University College</p>
+                                <p>Along Jokwoyi-Karshi Road</p>
+                                <p>FCT Abuja, Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <style>
+        .contact-page {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .contact-hero {
+            background: url('./landing-page-assets/img/bg-img/footer-bg.png') no-repeat center center;
+            background-size: cover;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        .contact-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 30px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content p {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 991px) {
+            .contact-hero {
+                padding: 80px 0;
+                margin: 20px 10px !important;
+            }
+        }
+
+        .contact-info-section {
+            padding: 80px 0;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            height: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #ff0000;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: #ff0000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover .icon-wrapper {
+            transform: scale(1.1);
+        }
+
+        .contact-card h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .contact-details {
+            color: #666;
+        }
+
+        .contact-link {
+            display: block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: #ff0000;
+        }
+
+        .address p {
+            margin-bottom: 5px;
+            color: #666;
+        }
+    </style>
 
     <br><br><br>
 
@@ -127,10 +271,20 @@
     <script src="./landing-page-assets/js/vendor/nice-select.js"></script>
     <script src="./landing-page-assets/js/vendor/swiper.min.js"></script>
     <script src="./landing-page-assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 
 </html>
